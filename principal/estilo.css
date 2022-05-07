@@ -1,0 +1,147 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Mitr:wght@200&display=swap');
+
+:root{
+    --cor0--: white;
+    --cor1--: yellow;
+    --cor4--: rgb(0, 0, 0);
+    --cor5--: #e6e206dc;
+    --cor6--: rgba(0, 0, 0, 0.993);
+
+    --fonte-padrao:Arial,Verdana,Helvetica,sans-serif;
+    --fonte-destaque:'Bebas Neue',cursive;
+    --fonte-texto:'Mitr',cursive; 
+}
+*{
+    margin: 0px;
+    padding: 0px;
+    outline: none;
+}
+header{
+    text-align: center;
+    background-image: url('../imagem/logo.jpeg');
+    background-position: center center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-color: var(--cor6--);
+    padding: 100px;
+}
+header > h1{
+    font-family: var(--fonte-destaque);
+    font-weight: normal;
+    padding: 5px;
+}
+header > h1 > p {
+    text-align: center;
+}
+nav{
+    background-color: var(--cor4--);
+    display: flex;
+}
+nav > a {
+    text-decoration: none;
+    padding: 5px;
+    color: var(--cor0--);
+    font-weight: bold;
+    min-width: 100px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-right: 10px;
+    border: 1px transparent solid;
+
+
+}
+body{
+    font-family: var(--fonte-padrao);
+    background-color: var(--cor1--);
+    background-image: url('../imagem/via_rodovia.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+main{
+    background-color: white;
+    padding: 20px;
+    min-width: 280px;
+    max-width: 800px;
+    margin: auto;
+    
+}
+.especial{
+    font-family: var(--fonte-texto);
+    background-image: linear-gradient(to left, var(--cor0--),var(--cor1--),var(--cor2--));
+    padding: 5px;
+    
+}
+main > p{
+    padding: 20px;
+}
+main > article > p{
+    padding: 20px;
+}
+footer{
+    background-color: var(--cor5--);
+    padding: 10px;
+    text-align: center;
+    font-family: var(--fonte-destaque);
+    font-weight: normal;
+}
+footer > p > strong{
+    color: var(--cor4--);
+    font-family: var(--fonte-destaque);
+}
+
+
+nav > a:hover{
+    background-color: rgba(255, 255, 255, 0.322);
+    border-radius: 2px 2px 0px 0px ;
+    color: var(--cor5--);
+    border: 1px solid rgba(0, 0, 0, 0.123);
+    text-align: center;
+    transition: ease 0.5s;
+}
+aside{
+    text-align: justify;
+    background-color: var(--cor1);
+    margin: 10px;
+    border-radius: 10px;
+    border: solid #747e7e15;
+}
+aside > h3{
+    color: var(--cor3--);
+    font-family: var(--fonte-texto);
+    background-color: var(--cor2--);
+    padding: 10px;
+    margin: -10px -10px 0px - 10px;
+    border-radius: 5px 5px 0px 0px;
+   
+}
+aside > p {
+    text-align: justify;
+    margin: 10px;
+    padding: 10px;
+    background-color: rgba(250, 235, 215, 0.623);
+}
+footer> p > strong:hover{
+    color: var(--cor0--);
+    transition: ease 0.5s;
+}
+main > aside > p > input{
+    display: flex;
+    margin: auto;
+    font-family: var(--fonte-texto);
+}
+main > aside > p {
+    text-align: center;
+    font-family: var(--fonte-texto);
+}
+.resposta{
+    text-align: center;
+    color: var(--cor3--);
+    font-family: var(--fonte-destaque);
+}
+main > aside > p > input:focus{
+    border-color: var(--cor2--);
+}

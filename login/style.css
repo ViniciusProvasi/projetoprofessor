@@ -1,0 +1,116 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Mitr:wght@200&display=swap');
+
+:root{
+    --cor0--:white;
+    --cor1--: black;
+
+    --fonte-padrao:Arial,Verdana,Helvetica,sans-serif;
+    --fonte-destaque:'Bebas Neue',cursive;
+    --fonte-texto:'Mitr',cursive; 
+}
+*{
+    margin: 0px;
+    padding: 0px;
+    outline: none;
+    font-family: var(--fonte-padrao);
+}
+body{
+    background-color: black;
+    height: 68vh;
+    background-image: url('../imagem/fundo.jpeg');
+    background-repeat: no-repeat;
+    background-position: right top;
+    background-size: contain;
+}
+main{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    background-image: linear-gradient(to left, #FFFFFF,#e6e6e6d5,#bfbfbfda);
+    padding: 15px;
+    width: 25%;
+    margin-top: 15%;
+    border-radius: 5px;
+}
+header{
+    border: 1px solid transparent;
+    padding: 10px;
+}
+header > h1{
+    font-size: x-large;
+    text-align: center;
+    font-weight: normal;
+    font-family: var(--fonte-destaque);
+}
+input#email{
+    display: flex;
+    margin: auto;
+    border: none;
+    width: 260px;;
+    border-bottom: 3px solid var(--cor0--);
+    background-color: transparent;
+}
+input#senha{
+    display: flex;
+    margin: auto;
+    border: none;
+    width: 260px;
+    border-bottom: 3px solid var(--cor0--);
+    background-color: transparent;
+}
+button{
+    display: flex;
+    padding: 6px;
+    width: 68%;
+    margin: auto;
+    justify-content: center;
+    color: var(--cor0--);
+    background-color: rgba(0, 0, 0, 0.479);
+    border-radius: 10px;
+    cursor: pointer;
+    border: 1px  solid  rgba(97, 97, 97, 0.459);
+    font-family: var(--fonte-destaque);
+}
+.botao{
+    text-decoration: none;
+    
+}
+.cadastro {
+    padding-top: 10px;
+    text-align: center;
+    
+}
+.cadastro > a{
+    text-decoration: none;
+    font-size: small;
+    cursor: pointer;
+    font-family: var(--fonte-destaque);
+}
+.cadastro > a:hover{
+    text-decoration: underline;
+    transition: ease 0.5s;
+    color: #FFFFFF;
+}
+
+button:hover{
+    color: var(--cor1--);
+    background: rgba(255, 255, 255, 0.493);
+    transition: ease 0.5s ;
+}
+input#email:focus{
+    border-bottom: 3px solid yellow;
+    transition: ease-in-out 0.5s;
+}
+input#senha:focus{
+    border-bottom: 3px solid yellow;
+    transition: ease-in-out 0.5s;
+}
+.input-field{
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+
+
